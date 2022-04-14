@@ -2,7 +2,8 @@ import flask
 from flask import Flask
 app = Flask(__name__)
 from flask import request
-"""
+
+#Example1
 @app.route('/')
 def index():
     return '<h1>Bad request</h1>', 400
@@ -20,7 +21,7 @@ from flask import redirect
 @app.route('/')
 def index():
     return redirect('http://www.example.com')
-"""
+
 
 #abort function
 from flask import abort
